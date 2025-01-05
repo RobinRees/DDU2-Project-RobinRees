@@ -50,6 +50,7 @@ a {
     background-color: white;
     border: black solid 2px;
     max-width: 800px;
+    box-sizing: border-box;
     width: 100%;
     margin: 0px;
 }
@@ -59,4 +60,31 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px
+}
+
+#containerForCells {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    background-color: white;
+    border: black solid 2px;
+    box-sizing: border-box;
+    max-width: 800px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 10px;
+    gap: 2px;
+    padding: 10px;
+}
+
+.gridCell {
+    margin: 0px;
+    background-color: orange;
+    border: 1px black solid;
+    color: white;
+    font-size: 25px;
+    height: 35px;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
