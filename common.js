@@ -28,8 +28,9 @@ button.addEventListener('click', () => {
     if (!isNaN(numberOfCells) && numberOfCells > 0) {
         for (let i = 0; i < numberOfCells; i++) {
             const createCell = document.createElement("div");
+            const randomNumber = Math.floor(Math.random() * 99) + 1;
             createCell.className = "gridCell";
-            createCell.textContent = `${i + 1}`;
+            createCell.textContent = randomNumber;
             containerForCells.appendChild(createCell);
         }
     } else {
