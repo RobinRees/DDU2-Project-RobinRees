@@ -23,15 +23,17 @@ const containerForCells = document.getElementById("containerForCells");
 
 button.addEventListener('click', () => {
     containerForCells.innerHTML = ``;
-    const numberOfCells = parseInt(input.value, 10);
+    const numberOfCells = parseInt(input.value, 10)
+
 
     if (!isNaN(numberOfCells) && numberOfCells > 0) {
         for (let i = 0; i < numberOfCells; i++) {
             const createCell = document.createElement("div");
             const randomNumber = Math.floor(Math.random() * 99) + 1;
             createCell.className = "gridCell";
+            createCell.id = [i];
             createCell.textContent = randomNumber;
-            containerForCells.appendChild(createCell);
+            containerForCells.appendChild(createCell);         
         }
     } else {
         containerForCells.textContent = `Ange ett giltigt nummer`

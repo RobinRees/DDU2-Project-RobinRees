@@ -55,7 +55,7 @@ a {
     margin: 0px;
 }
 
-#gridCreateBox {
+#controlsContainer div {
     display: flex;
     align-items: center;
     justify-content: center;
