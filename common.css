@@ -10,6 +10,7 @@ body {
 
 p {
     font-size: 20px;
+    margin: 0px;
 }
 
 input {
@@ -53,13 +54,19 @@ a {
     box-sizing: border-box;
     width: 100%;
     margin: 0px;
+    padding: 30px;
 }
 
 #controlsContainer div {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#controlsContainer div:last-child {
+    margin-bottom: 0px;
 }
 
 #containerForCells {
@@ -78,7 +85,7 @@ a {
 
 .gridCell {
     margin: 0px;
-    background-color: orange;
+    background-color: gray;
     border: 1px black solid;
     color: white;
     font-size: 25px;
