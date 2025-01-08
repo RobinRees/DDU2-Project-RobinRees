@@ -1,0 +1,13 @@
+.classForClear:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.secondClassForClear {
+    background-color: red;
+}
+
+.secondClassForClear:hover {
+    background-color: orange;
+    cursor: pointer;
+}

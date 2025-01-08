@@ -30,8 +30,7 @@ button.addEventListener('click', () => {
         for (let i = 0; i < numberOfCells; i++) {
             const createCell = document.createElement("div");
             const randomNumber = Math.floor(Math.random() * 99) + 1;
-            createCell.className = "gridCell";
-            createCell.id = [i];
+            createCell.classList.add("gridCell", "classForClear");
             createCell.textContent = randomNumber;
             containerForCells.appendChild(createCell);         
         }
