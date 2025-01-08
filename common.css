@@ -95,3 +95,7 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+.highlightGreen {
+    background-color: green;
+}

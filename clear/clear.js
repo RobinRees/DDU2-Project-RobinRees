@@ -27,4 +27,4 @@ clearButton.addEventListener("click", () => {
             allCells[i].textContent = randomNumber;
         }
     }
-})
+});
