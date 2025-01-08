@@ -6,6 +6,7 @@ const descriptionInput = document.getElementById("descriptionOfRemoval");
 newRandomNumberButton.addEventListener("click", () => {
     let randomNumber = Math.floor(Math.random() * 99) + 1;
     randomNumberInput.value = randomNumber;
+    descriptionInput.value = "-";
     const allCells = document.querySelectorAll(".gridCell"); 
     
     for (let j = 0; j < allCells.length; j++) {
@@ -37,4 +38,24 @@ removeButton.addEventListener("click", () => {
 
     }
     descriptionInput.value = `${currentNumber} was removed ${counter} time/s`;
-})
+});
+
+
+containerForCells.addEventListener("click", (event) => {
+    if (event.target.classList.contains("gridCell")) {
+        const currentNumber = event.target.textContent;
+        const allCells = document.querySelectorAll(".gridCell");
+
+        for (let j = 0; j < allCells.length; j++) {
+            if (allCells[j].classList.contains("orange")) {
+                allCells[j].classList.remove("orange");
+            }
+        }
+
+        for (let i = 0; i < allCells.length; i++) {
+            if (allCells[i].textContent === currentNumber) {
+                allCells[i].classList.add("orange");
+            }
+        }
+    }
+});
