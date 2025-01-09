@@ -1,9 +1,23 @@
+@font-face {
+    font-family: 'Jersey15';
+    src: url(Font/Jersey15-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+#webshare, #github {
+    font-family: 'Jersey15';
+    color: rgb(0, 255, 0);
+    font-size: 20px;
+}
+
 body {
     height: 100vh;
     width: 100vw;
     display: flex;
     background-color: orange;
-    overflow: hidden;
+    margin: 0;
+    margin-top: 10px;
     flex-direction: column;
     align-items: center;
 }
